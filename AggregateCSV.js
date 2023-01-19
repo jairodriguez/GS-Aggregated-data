@@ -1,7 +1,7 @@
 //This function import data from the csv files in the folder with id '1pP-c1fM7wN9CD6ZDTAgJGdtSt8PwZdB1'
 function importCSV() {
   //The folder id where the csv files are located
-  var folderId = "1pP-c1fM7wN9CD6ZDTAgJGdtSt8PwZdB1";
+  var folderId = "Source Folder ID";
 
   //Getting the active sheet of the current spreadsheet
   var sheet = SpreadsheetApp.getActiveSheet();
@@ -115,7 +115,7 @@ function importCSV() {
 
       // move all processed files to the processed folder
       var parsedFolder = DriveApp.getFolderById(
-        "1TgdPCEOGSNm4xE1psbaCfsWUT6_BJANf"
+        "Processed CSV Files folder ID"
       );
       for (var i = 0; i < processedFiles.length; i++) {
         processedFiles[i].moveTo(parsedFolder);
