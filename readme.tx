@@ -1,0 +1,12 @@
+This script is for importing data from CSV files located in a specific Google Drive folder into a Google Sheets document.
+
+It begins by defining the folder ID of the location of the CSV files and the Spreadsheet ID and sheet name of the Google Sheets document. It then uses the DriveApp and SpreadsheetApp to open the folder and sheet.
+
+The script then loops through all the files in the folder and checks if they are CSV files. If they are, it parses the data in the file and stores it in a 2D array. The script also checks if the keyword in the CSV file is already in the Google Sheets document, and if it is not, it adds the data to the sheet.
+
+The script also keeps track of the processed files and appends them to processedFiles array.
+
+Note: This script is written in Google Apps Script, which is a JavaScript-based scripting language that provides easy ways to automate tasks across Google products and third-party services.
+
+
+
